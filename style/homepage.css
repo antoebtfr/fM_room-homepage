@@ -46,6 +46,7 @@ nav{
 
 nav #site-logo{
     margin-right: 3vw; 
+    cursor: pointer;
 }
 
 nav ul {
@@ -55,4 +56,5 @@ nav ul {
 
 nav ul li {
     margin-left: 40px;
+    cursor: pointer;
 }
