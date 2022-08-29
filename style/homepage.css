@@ -58,3 +58,8 @@ nav ul li {
     margin-left: 40px;
     cursor: pointer;
 }
+
+h1, h2{
+    font-size: 30px;
+    font-weight: 700;
+}
