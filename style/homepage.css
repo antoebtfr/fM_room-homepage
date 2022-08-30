@@ -20,6 +20,10 @@ body{
 #top-right-section{
     width: 40vw;
     height: 60vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 #bottom-left-section{
@@ -59,7 +63,39 @@ nav ul li {
     cursor: pointer;
 }
 
-h1, h2{
-    font-size: 30px;
+.slide{
+    width: 70%;
+}
+
+.slide h1, .slide h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.slide p{
+    line-height: 25px;
+}
+
+section h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+section p {
+    color: hsl(0, 0%, 63%);
+}
+
+.slide .shop-now-button{
+    background-color: transparent;
+    border: none; 
+    color: black; 
+    text-transform: uppercase;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin-top:20px;
+    letter-spacing: 20px;
     font-weight: 700;
 }
