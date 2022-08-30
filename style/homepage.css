@@ -24,6 +24,7 @@ body{
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #bottom-left-section{
@@ -81,6 +82,8 @@ section h2{
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 7px;
 }
 
 section p {
@@ -98,4 +101,44 @@ section p {
     margin-top:20px;
     letter-spacing: 20px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+#angle-container{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.btn-angle{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    cursor: pointer;
+}
+
+#bottom-left-section{
+    background-image: url(../images/image-about-dark.jpg);
+    background-size: cover;
+}
+
+#bottom-right-section{
+    background-image: url(../images/image-about-light.jpg);
+    background-size: cover;
+}
+
+#bottom-middle-section{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottom-middle-section div{
+    width: 90%;
+}
+
+#bottom-middle-section div p{
+    line-height: 25px;
 }
