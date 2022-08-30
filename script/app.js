@@ -1,8 +1,5 @@
-const carouselSlideStart = () => {
-    const slides = $('.slide');
-    $('#top-right-section').addClass('active-slide-1');
-    slides.hide();
-    slides.first().show();
-}
+import Slider  from './slider.js';
 
-carouselSlideStart();
+const slider = new Slider;
+
+slider.carouselSlideStart();
