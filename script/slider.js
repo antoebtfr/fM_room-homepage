@@ -28,12 +28,28 @@ export default class Slider {
     }
 
     changeSlide = () => {
+        const slides = $('.slide');
         this.slideLimitTester();
+        slides.hide();
+        slides.filter('#slide-' + this.activeSlide).show();
         $('#top-right-section').attr('class', 'active-slide-' + this.activeSlide);
+        this.changeBackgroundImage();
     }
 
     slideLimitTester(){
         this.activeSlide <= 0 ? this.activeSlide = this.slideNumber : '';
         this.activeSlide > this.slideNumber ? this.activeSlide = 1 : '';
+    }
+
+    changeBackgroundImage(){
+        const imageBank = [
+            {id: 1, image: 'desktop-image-here-1', ext: 'jpg'},
+            {id: 2, image: 'desktop-image-here-2', ext: 'jpg'},
+            {id: 3, image: 'desktop-image-here-3', ext: 'jpg'}
+        ] 
+
+        console.log(imageBank.filter( x => x.id = this.activeSlide)); 
+
+
     }
 }
