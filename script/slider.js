@@ -43,13 +43,13 @@ export default class Slider {
 
     changeBackgroundImage(){
         const imageBank = [
-            {id: 1, image: 'desktop-image-here-1', ext: 'jpg'},
-            {id: 2, image: 'desktop-image-here-2', ext: 'jpg'},
-            {id: 3, image: 'desktop-image-here-3', ext: 'jpg'}
+            {id: 1, image: 'desktop-image-hero-1', ext: 'jpg'},
+            {id: 2, image: 'desktop-image-hero-2', ext: 'jpg'},
+            {id: 3, image: 'desktop-image-hero-3', ext: 'jpg'}
         ] 
 
-        console.log(imageBank.filter( x => x.id = this.activeSlide)); 
+        const background = imageBank.filter( x => x.id == this.activeSlide)[0];
 
-
+        $('#top-left-section').css('background-image', 'url("../images/' + background.image + '.'+ background.ext +'")');
     }
 }
