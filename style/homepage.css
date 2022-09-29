@@ -5,6 +5,9 @@ body{
     width: 100vw;
 }
 
+.reponsive {
+    display: none;
+}
 
 #top-left-section{
     color: white; 

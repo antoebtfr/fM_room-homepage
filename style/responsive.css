@@ -14,6 +14,13 @@
         position: relative;
     }
 
+    
+    .homepage-section{
+        width: 100vw !important;
+    }
+
+
+
     nav {
         margin-left: 0;
         display: flex;
@@ -33,10 +40,55 @@
 
     #angle-container #btn-angle-previous-mobile,
     #angle-container #btn-angle-next-mobile {
-        width: 50px;
-        height: 50px;
+        width: 20vw;
+        height: 20vw;
         cursor: pointer;
     }
 
+    .slide .shop-now-button{
+        font-size:  20px;
+        letter-spacing: 20px;
+    }
+
+    .slide h1, .slide h2{
+        font-size: 10vw;
+    }
+
+    .slide p, #bottom-middle-section div p{
+        line-height: 25px;
+        font-size: 4.5vw;
+    }
+
+    .slide{
+        width: 80%;
+    }
+
+    .slide .shop-now-button {
+        font-size: 20px;
+        letter-spacing: 17px;
+    }
+
+
+    #menu-burger-icon{
+        position: absolute;
+        left: 3vh;
+        cursor: pointer;
+    }
+
+    #navbar-responsive{
+        width: 100vw;
+        height: 10vh;
+        background: white;
+        color : black;
+        text-transform: lowercase;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu li {
+        margin-left: 5px;
+    }
 
 }

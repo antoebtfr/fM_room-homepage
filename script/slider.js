@@ -15,6 +15,9 @@ export default class Slider {
     
         $('#btn-angle-previous').click(this.previousSlide);
         $('#btn-angle-next').click(this.nextSlide);
+
+        $('#btn-angle-previous-mobile').click(this.previousSlide);
+        $('#btn-angle-next-mobile').click(this.nextSlide);
      }
  
     previousSlide = () => {
