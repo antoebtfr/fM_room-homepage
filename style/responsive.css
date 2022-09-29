@@ -6,6 +6,10 @@
         display: none !important;
     }
 
+    .responsive {
+        display: inherit;
+    }
+
     #top-left-section,
     #top-right-section {
         width: 100vw;
@@ -14,8 +18,16 @@
         position: relative;
     }
 
-    
-    .homepage-section{
+    #top-right-section {
+        padding-top: 25px;
+    }
+
+    .slide-container{
+        height: inherit;
+    }
+
+
+    .homepage-section {
         width: 100vw !important;
     }
 
@@ -45,50 +57,90 @@
         cursor: pointer;
     }
 
-    .slide .shop-now-button{
-        font-size:  20px;
+    .slide .shop-now-button {
+        font-size: 20px;
         letter-spacing: 20px;
     }
 
-    .slide h1, .slide h2{
+    .slide h1,
+    .slide h2 {
         font-size: 10vw;
     }
 
-    .slide p, #bottom-middle-section div p{
-        line-height: 25px;
+    .slide p,
+    #bottom-middle-section div p {
+        line-height: 6vw;
         font-size: 4.5vw;
     }
 
-    .slide{
+    .slide {
         width: 80%;
     }
 
     .slide .shop-now-button {
         font-size: 20px;
         letter-spacing: 17px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
 
-    #menu-burger-icon{
+    #menu-burger-icon {
         position: absolute;
         left: 3vh;
         cursor: pointer;
     }
 
-    #navbar-responsive{
+    #navbar-responsive {
         width: 100vw;
-        height: 10vh;
+        height: 15vh;
         background: white;
-        color : black;
+        color: black;
         text-transform: lowercase;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 30px;
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 99;
     }
 
     .menu {
         display: flex;
+        font-weight: 700;
     }
 
     .menu li {
-        margin-left: 5px;
+        margin-left: 2vw;
     }
 
+    #close-nav {
+        position: fixed;
+        left: 25px;
+    }
+
+    #overlay-menu{
+        background: black;
+        width: 100vw;
+        height: 90vh;
+        opacity: 0.5;
+        position: fixed;
+        top: 10vh;
+        left: 0;
+        z-index: 98;
+    }
+
+   body{
+    overflow-x: hidden;
+   }
+
+
+}
+
+@media screen and (max-width: 350px) {
+    .slide .shop-now-button {
+        font-size: 10px;
+        letter-spacing: 10px;
+    }
 }
