@@ -28,7 +28,7 @@ body{
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    height: 90%;
+    height: 50vh;
 }
 
 #bottom-left-section{
@@ -47,7 +47,7 @@ body{
 }
 
 #bottom-middle-section, #top-right-section, #top-left-section{
- overflow: auto;
+ overflow: hidden;
 }
     
 
@@ -115,14 +115,18 @@ section p {
 
 #angle-container{
     display: flex;
-    height: 10%;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .btn-angle{
-    width: 80px;
-    height: he;
+    width: 10vh;
+    height: 100%;
     background-color: black;
     cursor: pointer;
+    border: 0;
 }
 
 #bottom-left-section{
@@ -148,4 +152,46 @@ section p {
 
 #bottom-middle-section div p{
     line-height: 25px;
+}
+
+
+@media screen and (max-width: 1300px ) {
+    #angle-container{
+        height: 7.5vh;
+    }
+
+    .btn-angle{
+        width: 7.5vh;
+    }
+
+    .slide .shop-now-button{
+        font-size: 15px;
+        letter-spacing: 15px;
+    }
+
+    .slide h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px ) {
+    .slide .shop-now-button{
+        font-size: 10px;
+        letter-spacing: 10px;
+    }
+
+    .slide h1{
+        font-size: 30px;
+    }
+
+    .slide p, #bottom-middle-section div p{
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 790px ) {
+    .slide p, #bottom-middle-section div p {
+        line-height: 15px;
+        font-size: 13px;
+    }
 }
