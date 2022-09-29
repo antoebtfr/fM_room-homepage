@@ -53,6 +53,6 @@ export default class Slider {
 
         const background = imageBank.filter( x => x.id == this.activeSlide)[0];
 
-        $('#top-left-section').css('background-image', 'url("../images/' + background.image + '.'+ background.ext +'")');
+        $('#top-left-section').css('background-image', 'url("/images/' + background.image + '.'+ background.ext +'")');
     }
 }
