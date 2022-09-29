@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/homepage.css">
+  <link rel="stylesheet" href="style/responsive.css">
 
 
   <title>Frontend Mentor | Room homepage</title>
@@ -38,14 +39,27 @@
             fill="#FFF" fill-rule="nonzero" />
         </svg>
       </a>
-      <ul>
+      <ul class="desktop-mode">
         <li>Home</li>
         <li>Shop</li>
         <li>About</li>
         <li>Contact</li>
       </ul>
     </nav>
+
+    <div id="angle-container">
+      <button class="btn-angle" id="btn-angle-previous-mobile"><svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
+      </svg></button>
+    <button class="btn-angle" id="btn-angle-next-mobile">
+      <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
+      </svg>
+    </button>
+    </div>
   </section>
+
+
   <section id="top-right-section">
 
     <div class="slide-container">
@@ -103,7 +117,7 @@
       </div>
     </div>
 
-    <div id="angle-container">
+    <div id="angle-container-desktop" class="desktop-mode">
       <button class="btn-angle" id="btn-angle-previous"><svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
           <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
         </svg></button>

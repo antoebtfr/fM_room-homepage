@@ -1,0 +1,42 @@
+/* Mobile Responsive  */
+
+@media screen and (max-width : 525px) {
+
+    .desktop-mode {
+        display: none !important;
+    }
+
+    #top-left-section,
+    #top-right-section {
+        width: 100vw;
+        background-position: inherit;
+        height: 100vw;
+        position: relative;
+    }
+
+    nav {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav #site-logo {
+        margin: 0;
+    }
+
+    #angle-container {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    #angle-container #btn-angle-previous-mobile,
+    #angle-container #btn-angle-next-mobile {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+
+}
